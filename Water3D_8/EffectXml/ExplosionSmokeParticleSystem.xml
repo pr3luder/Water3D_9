@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ShaderEffect>
+  <EffectFile>Shaders/ParticleEffect</EffectFile>
+  <Variables>
+    <Uniform>
+      <Texture2D type="xna" name="tex0">Textures/smoke</Texture2D>
+      <float name="Duration">2</float>
+      <float name="DurationRandomness">0</float>
+      <Vector3 name="Gravity">0;-20;0</Vector3>
+      <float name="EndVelocity">0</float>
+      <Vector4 name="MinColor">0,8;0,8;0,8;1</Vector4>
+      <Vector4 name="MaxColor">1;1;1;1</Vector4>
+      <Vector2 name="RotateSpeed">-1;1</Vector2>
+      <Vector2 name="StartSize">10;10</Vector2>
+      <Vector2 name="EndSize">100;200</Vector2>
+    </Uniform>
+    <Mutable>
+      <Matrix name="View">View</Matrix>
+      <Matrix name="Projection">Projection</Matrix>
+      <Vector2 name="ViewportScale">ViewportScale</Vector2>
+      <float name="CurrentTime">Time</float>
+    </Mutable>
+  </Variables>
+  <Technique>Particles</Technique>
+</ShaderEffect>

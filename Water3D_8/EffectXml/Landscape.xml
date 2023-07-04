@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ShaderEffect>
+  <EffectFile>Shaders/Landscape_Heightmap</EffectFile>
+  <Variables>
+    <Uniform>
+      <!--
+      <Texture2D type="file" name="baseTex">Media\Textures\test2_cm.bmp</Texture2D>
+      <Texture2D type="file" name="lightTex">Media\Textures\test2_lm.bmp</Texture2D>
+      <Texture2D type="file" name="detailTex">Media\Textures\terrain_detail_texture.jpg</Texture2D>
+      -->
+
+      <Texture2D type="manager" name="baseTex">landscapecolor</Texture2D>
+      <Texture2D type="manager" name="lightTex">landscapelight</Texture2D>
+      <Texture2D type="manager" name="detailTex">landscapedetail</Texture2D>
+      <!--
+      <Texture2D type="xna" name="baseTex">Textures/test2_cm</Texture2D>
+      <Texture2D type="xna" name="lightTex">Textures/test2_lm</Texture2D>
+      <Texture2D type="xna" name="detailTex">Textures/terrain_detail_texture</Texture2D>
+      -->
+      <Vector3 name="xLightDirection">0,0; -1,0; 0,0</Vector3>
+      <float name="xAmbient">0,1</float>
+      <float_arr name="displacement">displacmentmap</float_arr>
+    </Uniform>
+  </Variables>
+  <Technique>TShader2</Technique>
+</ShaderEffect>

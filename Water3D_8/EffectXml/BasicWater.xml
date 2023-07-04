@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ShaderEffect>
+  <EffectFile>BasicEffect</EffectFile>
+  <Variables>
+    <Uniform>
+      <Texture2D type="xna" name="Texture">Textures/test2_cm</Texture2D>
+    </Uniform>
+    <Mutable>
+      <Matrix name="World">getWorldMatrix</Matrix>
+      <Matrix name="View">getViewMatrix</Matrix>
+      <Matrix name="Projection">getProjectionMatrix</Matrix>
+    </Mutable>
+  </Variables>
+  <Technique>TShader2</Technique>
+</ShaderEffect>

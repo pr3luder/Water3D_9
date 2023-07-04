@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ShaderEffect>
+  <EffectFile>Effects\Water.fx</EffectFile>
+  <Variables>
+    <Uniform>
+      <Texture3D type="file" name="Noise_Tex">Media\Textures\NoiseVolume.dds</Texture3D>
+      <Texture2D type="file" name="tex1">Media\Bumpmaps\bumpmap.bmp</Texture2D>  
+      <TextureCube type="file" name="skycube">Media\Cubemaps\skybox.dds</TextureCube>
+    </Uniform>
+    <Mutable>
+      <Texture2D name="tex0">getEnvTexture</Texture2D>
+      <Texture2D name="tex2">getBumpTexture</Texture2D>
+      <Vector4 name="eyePos">getEyeVector</Vector4>
+      <Matrix name="matWorldViewProj">getWorldViewProjectionMatrix</Matrix>
+      <Matrix name="matWorld">getWorldMatrix</Matrix>
+      <Matrix name="matProjTex">getProjectiveTextureMatrix</Matrix>
+      <float name="time">getTime</float>
+    </Mutable>
+  </Variables>
+  <Technique>TShader</Technique>
+  <Commands>
+    <entry name="changeTexture">normalMap</entry>
+  </Commands>
+</ShaderEffect>

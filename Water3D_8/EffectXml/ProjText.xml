@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ShaderEffect>
+    <EffectFile>Effects\ReflProj.fx</EffectFile>
+    <Variables>
+        <Uniform>
+          <VolumeTexture>
+            <name>Noise_Tex</name>
+            <path>Media\Textures\NoiseVolume.dds</path>
+            <method>empty</method>
+          </VolumeTexture>
+          <CubeTexture>
+              <name>tex1</name>
+              <path>empty</path>
+              <method>getCubeTexture</method>
+           </CubeTexture>
+        </Uniform>
+        <Mutable>
+            <name>tex0</name>
+            <method>getEnvTexture</method>
+            <name>eyePos</name>
+            <method>getEyeVector</method>
+            <name>matWorldViewProj</name>
+            <method>getWorldViewProjectionMatrix</method>
+            <name>matWorld</name>
+            <method>getWorldMatrix</method>
+            <name>matProjTex</name>
+            <method>getProjectiveTextureMatrix</method>
+            <name>time</name>
+            <method>getTime</method>
+        </Mutable>
+    </Variables>
+    <Technique>TShader</Technique>
+    <Commands>
+        <name>changeTexture</name>
+        <variable>normalMap</variable>
+    </Commands>
+</ShaderEffect>

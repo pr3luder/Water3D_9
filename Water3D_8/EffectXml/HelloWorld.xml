@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ShaderEffect>
+    <EffectFile>Effects\HelloWorld.fx</EffectFile>
+    <Variables>
+        <Uniform>
+            <Texture>
+                <name>tex</name>
+                <path>Media\Textures\helloworld.jpg</path>
+                <method>empty</method>
+            </Texture>
+        </Uniform>
+        <Mutable>
+            <name>worldViewProj</name>
+            <method>getWorldViewProjectionMatrix</method>
+        </Mutable>
+    </Variables>
+    <Technique>TShader</Technique>
+    <Commands>
+        <name>changeTexture</name>
+        <variable>tex</variable>
+    </Commands>
+</ShaderEffect>

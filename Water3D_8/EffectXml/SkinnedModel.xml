@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ShaderEffect>
+  <EffectFile>SkinnedEffect</EffectFile>
+  <Variables>
+    <Mutable>
+      <Matrix name="Bones">BoneTransforms</Matrix>
+      <Matrix name="World">World</Matrix>
+      <Matrix name="View">View</Matrix>
+      <Matrix name="Projection">Projection</Matrix>
+    </Mutable>
+  </Variables>
+  <Technique>SkinnedModelTechnique</Technique>
+</ShaderEffect>

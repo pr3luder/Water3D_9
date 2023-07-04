@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ShaderEffect>
+  <EffectFile type="file">Effects/Water.fx</EffectFile>
+  <Variables>
+    <Uniform>
+      <Texture2D type="xna" name="Noise_Tex">Textures/bumpmap</Texture2D>
+      <!--<Texture2D type="xna" name="tex1">Textures/bumpmap</Texture2D>-->
+      <TextureCube type="xna" name="skycube">Textures/skybox</TextureCube>
+    </Uniform>
+    <Mutable>
+      <Texture2D name="tex0">reflection</Texture2D>
+      <Texture2D name="tex2">refraction</Texture2D>
+      <Vector4 name="eyePos">Eye</Vector4>
+      <Matrix name="matWorldViewProj">WorldViewProjection</Matrix>
+      <Matrix name="matWorld">World</Matrix>
+      <Matrix name="matProjTex">ProjectiveTexture</Matrix>
+      <float name="time">Time</float>
+      <float name="random">Random</float>
+    </Mutable>
+  </Variables>
+  <Technique>TShader</Technique>
+  <Commands>
+    <entry name="changeTexture">normalMap</entry>
+  </Commands>
+</ShaderEffect>

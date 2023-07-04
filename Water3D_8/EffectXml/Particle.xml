@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ShaderEffect>
+    <EffectFile>Effects\Particle.fx</EffectFile>
+    <Variables>
+        <Uniform>
+            <Texture>
+                <name>ColorTexture</name>
+                <path>Media\Textures\Particle.dds</path>
+                <method>empty</method>
+            </Texture>
+        </Uniform>
+        <Mutable>
+            <name>WvpXf</name>
+            <method>getWorldViewProjectionMatrix</method>
+        </Mutable>
+    </Variables>
+    <Technique>Normal</Technique>
+    <Commands>
+        <name>changeTexture</name>
+        <variable>ColorTexture</variable>
+    </Commands>
+</ShaderEffect>

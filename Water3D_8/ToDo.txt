@@ -1,0 +1,3 @@
+﻿-TexturManager
+-ShaderManager (EffectContainer suchen, evtl. Objekt anpassen)
+-Scene/ObjectManager

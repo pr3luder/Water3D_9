@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ShaderEffect>
+  <EffectFile>Shaders/Landscape1</EffectFile>
+  <Variables>
+    <Uniform>
+      <Vector3 name="xLightDirection">1,0; -1,0; -1,0</Vector3>
+      <float name="xAmbient">0,1</float>
+    </Uniform>
+    <Mutable>
+      <Matrix name="matWorldViewProj">getWorldViewProjectionMatrix</Matrix>
+      <Matrix name="matWorld">getWorldMatrix</Matrix>
+    </Mutable>
+  </Variables>
+  <Technique>TShader2</Technique>
+</ShaderEffect>

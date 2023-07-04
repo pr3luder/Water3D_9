@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ShaderEffect>
+    <EffectFile>Effects\Phong.fx</EffectFile>
+    <Variables>
+        <Uniform>
+            <float>
+                <name>shininess</name>
+                <value>60</value>
+                <method>empty</method>
+            </float>
+        </Uniform>
+        <Mutable>
+            <name>worldView</name>
+            <method>getWorldViewMatrix</method>
+            <name>worldViewIT</name>
+            <method>getWorldViewInverseTranspose</method>
+            <name>worldViewProj</name>
+            <method>getWorldViewProjectionMatrix</method>
+            <name>view</name>
+            <method>getViewMatrix</method>
+        </Mutable>
+    </Variables>
+    <Technique>phong</Technique>
+    <Commands>
+        <name>changeShininess</name>
+        <variable>shininess</variable>
+    </Commands>
+</ShaderEffect>

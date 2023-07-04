@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ShaderEffect>
+  <EffectFile>DualTextureEffect</EffectFile>
+  <Variables>
+    <Uniform>
+      <Texture2D type="xna" name="Texture">Textures/test2_cm</Texture2D>
+      <Texture2D type="xna" name="Texture2">Textures/terrain_detail_texture</Texture2D>
+    </Uniform>
+    <Mutable>
+      <Matrix name="World">World</Matrix>
+      <Matrix name="View">View</Matrix>
+      <Matrix name="Projection">Projection</Matrix>
+    </Mutable>
+  </Variables>
+  <Technique>TShader2</Technique>
+</ShaderEffect>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ShaderEffect>
+    <EffectFile>Effects\BumpMap3.fx</EffectFile>
+    <Variables>
+        <Uniform>
+            <VolumeTexture>
+                <name>Noise_Tex</name>
+                <path>Media\Textures\NoiseVolume.dds</path>
+                <method>empty</method>
+            </VolumeTexture>
+            <CubeTexture >
+                <name>skyBox_Tex</name>
+                <path>empty</path>
+                <method>getCubeTexture</method>
+            </CubeTexture>
+        </Uniform>
+        <Mutable>
+            <name>tex0</name>
+            <method>getEnvTexture</method>
+            <name>matProjTex</name>
+            <method>getProjectiveTextureMatrix</method>
+            <name>Reflection_Refraction_and_Water_Effects_Ocean_Water_Vertex_Shader_view_proj_matrix</name>
+            <method>getWorldViewProjectionMatrix</method>
+            <name>Reflection_Refraction_and_Water_Effects_Ocean_Water_Vertex_Shader_view_position</name>
+            <method>getEyeVector</method>
+            <name>time_0_X</name>
+            <method>getTime</method>
+        </Mutable>
+    </Variables>
+    <Technique>TShader</Technique>
+    <Commands>
+        <name>changeTexture</name>
+        <variable>normalMap</variable>
+    </Commands>
+</ShaderEffect>

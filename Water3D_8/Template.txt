@@ -1,0 +1,10 @@
+using System;
+namespace CompileFunctions {
+	public class CompiledExpression 
+	{
+		public static double f(double x) 
+		{
+			return ###f###;
+		}
+	}
+}

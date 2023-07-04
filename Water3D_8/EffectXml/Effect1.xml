@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ShaderEffect>
+    <EffectFile>Effects\BumpMap2.fx</EffectFile>
+    <Variables>
+        <Uniform>
+            <CubeTexture>
+                <name>cubeMap</name>
+                <path>Media\Cubemaps\test.dds</path>
+                <method>getCubeTexture</method>
+            </CubeTexture>
+            <Texture>
+                <name>normalMap</name>
+                <path>Media\Textures\waves2.dds</path>
+                <method>empty</method>
+            </Texture>
+            <float>
+                <name>bumpHeight</name>
+                <value>0,4</value>
+                <method>empty</method>
+            </float>
+        </Uniform>
+        <Mutable>
+            <name>wvpMatrix</name>
+            <method>getWorldViewProjectionMatrix</method>
+            <name>worldMatrix</name>
+            <method>getWorldMatrix</method>
+            <name>worldViewMatrix</name>
+            <method>getWorldViewMatrix</method>
+            <name>viewInverseMatrix</name>
+            <method>getViewInverseMatrix</method>
+            <name>time</name>
+            <method>getTime</method>
+        </Mutable>
+    </Variables>
+    <Technique>TShader</Technique>
+    <Commands>
+        <name>changeBumpiness</name>
+        <variable>bumpHeight</variable>
+    </Commands>
+</ShaderEffect>

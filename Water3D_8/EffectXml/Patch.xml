@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ShaderEffect>
+  <EffectFile>Shaders/Landscape_Heightmap</EffectFile>
+  <Variables>
+    <Mutable>
+      <Matrix name="matWorldViewProj">WorldViewProjection</Matrix>
+      <Matrix name="matWorld">World</Matrix>
+    </Mutable>
+  </Variables>
+  <Technique>TShader2</Technique>
+</ShaderEffect>

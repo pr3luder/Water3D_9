@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Scene3D>
+  <TextureManager>
+    <Texture2D type="file" path="Media\Textures\test2_cm.bmp">landscapecolor</Texture2D>
+    <Texture2D type="file" path="Media\Textures\test2_lm.bmp">landscapelight</Texture2D>
+    <Texture2D type="file" path="Media\Textures\terrain_detail_texture.jpg">landscapedetail</Texture2D>
+    <Texture2D type="file" path="Media\Heightmaps\test2_hm.bmp">heightmap</Texture2D>
+    <Texture2D type="reflect" objects="Landscape, modelAnim">reflection</Texture2D>
+    <Texture2D type="refract" objects="Landscape, modelAnim">refraction</Texture2D>
+  </TextureManager>
+  
+  <Camera vEye="134.0f, 5.0f, -23.0f" vDest="160.0f, 5.0f, -48.0f" vUp="0, 1, 0">Camera</Camera>
+  <Skybox pos="134.0f, 5.0f, -23.0f" scale="1, 1, 1" width="512.0f" depth="512.0f">SkyBox</Skybox>
+  <Landscape pos="0.0f, -10.0f, 0.0f" heightmap="test2_hm.bmp" scale="2.0f, 32.0f, 2.0f" mapDetail="3" mapSize="1024" patchSize="128">Landscape</Landscape>
+  <Model3DAnimated pos="0.0f, -10.0f, 0.0f" scale="2.0f, 32.0f, 2.0f">modelAnim</Model3DAnimated>
+</Scene3D>

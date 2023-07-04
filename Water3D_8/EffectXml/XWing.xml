@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ShaderEffect>
+  <EffectFile>Shaders/effects</EffectFile>
+  <Variables>
+    <Mutable>
+      <Matrix name="xWorld">World</Matrix>
+      <Matrix name="xView">View</Matrix>
+      <Matrix name="xProjection">Projection</Matrix>
+    </Mutable>
+  </Variables>
+  <Uniform>
+      <bool name="xEnableLighting">true</bool>
+      <Vector3 name="xLightDirection">3; -2; 5</Vector3>
+      <float name="xAmbient">0,5</float>
+    </Uniform> 
+  <Technique>Colored</Technique>
+</ShaderEffect>
